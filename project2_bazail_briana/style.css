@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+h1 {
+  font-family: 'Wire One', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 3%;
+  letter-spacing: 15px;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  padding: 10%;
+}
+
+h4 {
+  font-family: 'Wire One', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 3%;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 1.25rem;
+  padding: 3%;
+}
+
+/* Start Nav*/
+
+nav {
+  background-color: #C4BBAC;
+  padding: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: grey;
+  color: #C4BBAC;
+}
+
+/* End Nav*/
+
+/*========================================
+*
+*           Header
+*
+*
+*=========================================*/
+
+header {
+  background: #E7DBCB;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 100;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 30px;
+  font-family: 'Avenir', sans-serif;
+}
+
+body {
+  background-color: #F8F4EE;
+}
+
+/*========================================
+*
+*     Container
+*
+*
+*=========================================*/
+
+.container {
+  text-align: center;
+  padding-top: 100%;
+}
+
+.video {
+  text-align: center;
+  padding: 3%;
+}
+
+/*========================================
+*
+*     Projects
+*
+*
+*=========================================*/
+.project {
+  padding: 100px 0;
+}
+
+.project {
+  max-width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 3%;
+}
+
+.project img {
+  width: 250px;
+}
+
+.project a {
+  background: #C4BBAC;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-family: 'Avenir', sans-serif;
+  box-shadow: 0 0 10px grey;
+  display: flex;
+  justify-content: center;
+}
+
+.project:nth-child(even){
+  background: #EEE8DF;
+}
+
+.project:nth-child(odd){
+  background: #EEE8DF;
+}
+
+/*========================================
+*
+*     Figure
+*
+*
+*=========================================*/
+
+figure {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/*========================================
+*
+    Article*
+*
+*=========================================*/
+
+article {
+  margin: 10px;
+  padding: 10px;
+}
+
+/*========================================
+*
+*     Contact
+*
+*
+*=========================================*/
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #C4BBAC;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+  color: white;
+}
+
+.contact-section {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 25%;
+}
+
+/*========================================
+*
+*     Footer
+*
+*
+*=========================================*/
+footer {
+  background: #E7DBCB;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+}
+
+footer img {
+  width: 50px;
+  padding: 10px 10px;
+}
+
+/*========================================
+*
+*     Services
+*
+*
+*=========================================*/
+
+
+.container-services {
+  max-width: 90%;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding-top: 20%;
+}
+
+.services {
+  color: white;
+  display: flex;
+  margin: auto -1rem 1rem;
+}
+
+.col {
+  background-color: #E7DBCB;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.mainbar {
+  flex: 3;
+}
+
+/*========================================
+*
+*     Media Queries
+*
+*
+*=========================================*/
+
+@media (min-width: 550px) {
+  .container {
+    padding-top: 25%;
+  }
+}
+
+@media (max-width: 778px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
